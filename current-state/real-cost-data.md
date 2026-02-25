@@ -1,25 +1,25 @@
 # Real Cost Data — OpenRouter
 
-*Auto-generated: 2026-02-25 17:35 UTC*
+*Auto-generated: 2026-02-25 18:04 UTC*
 
 ## Live Spend
 
 | Metric | Amount |
 |--------|--------|
-| Total lifetime spend | $13.0881 |
-| Today's spend | $13.0881 |
-| This month | $13.0881 |
+| Total lifetime spend | $13.4591 |
+| Today's spend | $13.4591 |
+| This month | $13.4591 |
 | Spending limit | None set ⚠️ |
 
 ## STE Lifetime Stats (since 2026-02-25)
 
 | Metric | Count |
 |--------|-------|
-| Conversations mined | 35 |
-| Memories created | 20 |
+| Conversations mined | 48 |
+| Memories created | 28 |
 | Skills audited | 2 |
-| Knowledge entries built | 14 |
-| Total API calls | 14 |
+| Knowledge entries built | 21 |
+| Total API calls | 18 |
 
 ## ⚠️ Action Item
 No spending limit is set on the OpenRouter key. Set one at:
