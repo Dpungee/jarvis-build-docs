@@ -1,21 +1,21 @@
 # System Health Snapshot
 
-*Auto-generated: 2026-02-25 18:04 UTC*
+*Auto-generated: 2026-02-26 00:02 UTC*
 
 ## VPS Status
 | Metric | Value |
 |--------|-------|
-| Uptime | up 4 days, 56 minutes |
-| Disk | 68G / 96G (70%) |
+| Uptime | up 4 days, 6 hours, 54 minutes |
+| Disk | 33G / 96G (35%) |
 | Memory | 3.1Gi / 7.8Gi |
 
 ## Docker Containers
 ```
-agent-zero: Up 10 hours
+agent-zero: Up 8 minutes
 ```
 
 ## PM2 Processes (Online)
-jarvis-bridge, jarvis-agents, jarvis-watchdog, jarvis-convo-logger, jarvis-ste, jarvis-context-api
+jarvis-agents, jarvis-convo-logger, jarvis-ste, jarvis-context-api, jarvis-monitor, jarvis-watchdog, jarvis-bridge
 
 ## Cron Jobs
 ```
