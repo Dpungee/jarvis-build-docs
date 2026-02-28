@@ -1,14 +1,14 @@
 # Real Cost Data — OpenRouter
 
-*Auto-generated: 2026-02-27 00:02 UTC*
+*Auto-generated: 2026-02-28 00:02 UTC*
 
 ## Live Spend
 
 | Metric | Amount |
 |--------|--------|
-| Total lifetime spend | $17.4762 |
+| Total lifetime spend | $17.4835 |
 | Today's spend | $0.0000 |
-| This month | $17.4762 |
+| This month | $17.4835 |
 | Spending limit | None set ⚠️ |
 
 ## STE Lifetime Stats (since 2026-02-25)
