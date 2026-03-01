@@ -1,21 +1,21 @@
 # System Health Snapshot
 
-*Auto-generated: 2026-02-28 00:02 UTC*
+*Auto-generated: 2026-03-01 00:02 UTC*
 
 ## VPS Status
 | Metric | Value |
 |--------|-------|
-| Uptime | up 6 days, 6 hours, 54 minutes |
-| Disk | 25G / 96G (26%) |
-| Memory | 2.5Gi / 7.8Gi |
+| Uptime | up 1 week, 6 hours, 54 minutes |
+| Disk | 26G / 96G (28%) |
+| Memory | 3.8Gi / 7.8Gi |
 
 ## Docker Containers
 ```
-nebula-mint: Up 27 hours
+nebula-mint: Up 2 days
 ```
 
 ## PM2 Processes (Online)
-jarvis-convo-logger, jarvis-ste, jarvis-context-api, jarvis-monitor, jarvis-watchdog, jarvis-trainer, jarvis-openclaw, openclaw-tunnel, jarvis-training, jarvis-comms, jarvis-briefing, jarvis-agents, mission-api, jarvis-log-watcher, pm2-slack, pm2-logrotate, agent-codebot, agent-devops, agent-analyst, agent-scribe, agent-scheduler
+jarvis-convo-logger, jarvis-ste, jarvis-context-api, jarvis-monitor, jarvis-watchdog, jarvis-trainer, jarvis-openclaw, jarvis-comms, jarvis-briefing, jarvis-agents, mission-api, jarvis-log-watcher, pm2-slack, agent-codebot, agent-devops, agent-analyst, agent-scribe, agent-scheduler, pm2-health, pm2-logrotate, jarvis-memory, openclaw-tunnel, pnl-games
 
 ## Cron Jobs
 ```
@@ -28,4 +28,6 @@ jarvis-convo-logger, jarvis-ste, jarvis-context-api, jarvis-monitor, jarvis-watc
 0 13 * * * /home/claude-mcp/openclaw-workspace/daily-briefing.sh
 5 13 * * * python3 /home/claude-mcp/openclaw-workspace/drive-sync/sync.py >> /home/claude-mcp/openclaw-workspace/drive-sync/sync.log 2>&1
 0 * * * * curl -sf http://localhost:8888/landing.html > /dev/null && curl -s 'http://localhost:4200/log?msg=Landing+page+up&level=gray' || curl -s 'http://localhost:4200/log?msg=Landing+page+DOWN&level=red'
+0 4 * * * find /tmp -name 'subagent-*' -mtime +1 -delete 2>/dev/null
+0 3 * * * /home/claude-mcp/.nvm/versions/node/v22.22.0/bin/openclaw sessions cleanup >> /tmp/sessions-cleanup.log 2>&1
 ```
